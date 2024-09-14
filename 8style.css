@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(R.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sss {
+    background: transparent;
+    backdrop-filter: blur(20px);
+    height: 400px;
+    width: 450px;
+    border: 3px solid;
+    border-color: whitesmoke;
+}
+
+.sss h1 {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.rrr {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 3px solid #912BBC;
+    margin-left: 70px;
+    padding: 10px;
+    background: #fff;
+    width: 300px;
+}
+
+.input-container i {
+    font-size: 18px;
+    color: #912BBC;
+    padding-right: 10px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    border-radius: 40px;
+    padding-left: 10px;
+}
+
+.remember a {
+    margin-left: 120px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.remember input {
+    margin-left: 50px;
+    margin-top: 15px;
+    accent-color: #912BBC;
+}
+
+.remember label {
+    color: #fff;
+}
+
+button {
+    height: 35px;
+    width: 325px;
+    border-radius: 40px;
+    border: 3px solid #912BBC;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: purple;
+}
+
+p {
+    margin-top: 30px;
+    margin-left: 120px;
+    color: #fff;
+}
+
+p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+/* Media Queries */
+
+/* For small devices (mobile phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sss {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        border-width: 2px;
+    }
+
+    .sss h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .input-container {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 80%;
+        margin-left: 10%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    p {
+        margin-left: 10%;
+        font-size: 14px;
+    }
+
+    .remember a {
+        margin-left: 10%;
+    }
+}
+
+/* For medium devices (tablets, 600px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .sss {
+        width: 80%;
+        height: auto;
+    }
+
+    .sss h1 {
+        font-size: 28px;
+    }
+
+    .input-container {
+        width: 85%;
+        margin-left: 7.5%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 85%;
+        margin-left: 7.5%;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    p {
+        margin-left: 7.5%;
+        font-size: 16px;
+    }
+
+    .remember a {
+        margin-left: 7.5%;
+    }
+}
+
+/* For large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    .sss {
+        width: 450px;
+        height: 400px;
+    }
+
+    .sss h1 {
+        font-size: 32px;
+    }
+
+    .input-container {
+        width: 300px;
+        margin-left: 70px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 325px;
+        margin-left: 70px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    p {
+        margin-left: 120px;
+        font-size: 18px;
+    }
+
+    .remember a {
+        margin-left: 120px;
+    }
+}
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 3px solid #912BBC;
+    padding: 10px 15px; /* Proper padding for small screens */
+    background: #fff;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.input-container i {
+    font-size: 20px; /* Fixed font size for the icon */
+    color: #912BBC;
+    padding-right: 10px;
+    flex-shrink: 0; /* Prevent icon from resizing */
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding-left: 5px; /* Padding inside input */
+    padding-right: 5px;
+    border-radius: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-container {
+        padding: 8px 10px; /* Less padding for smaller screens */
+        max-width: 100%; /* Ensure input is fluid on small screens */
+    }
+
+    .input-container input {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        width: 90%; /* Button adjustment for small screens */
+    }
+}
